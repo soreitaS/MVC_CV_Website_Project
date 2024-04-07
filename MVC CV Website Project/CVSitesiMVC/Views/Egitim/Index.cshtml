@@ -1,0 +1,39 @@
+﻿@using CVSitesiMVC.Models.Entity
+@model List<TBLEgitimlerim>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Deneyim Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>BAŞLIK</th>
+        <th>ALT BAŞLIK 1</th>
+        <th>ALT BAŞLIK 2</th>
+        <th>GNO</th>
+        <th>TARİH</th>
+        <th>SİL</th>
+        <th>DÜZENLE</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Baslik</td>
+            <td>@item.AltBaslik1</td>
+            <td>@item.AltBaslik2</td>
+            <td>@item.GNO</td>
+            <td>@item.Tarih</td>
+            <td><a href="/Egitim/EgitimSil/@item.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Egitim/EgitimDuzenle/@item.ID" class="btn btn-success">DÜZENLE</a></td>
+        </tr>
+    }
+</table>
+<a href="/Egitim/EgitimEkle/" class="btn btn-primary">Yeni Eğitim Ekle</a>
+
+
+

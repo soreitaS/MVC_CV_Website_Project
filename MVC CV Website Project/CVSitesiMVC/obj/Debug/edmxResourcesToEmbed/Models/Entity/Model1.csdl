@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CVSitesiMVCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBLAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLDeneyimlerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Baslik" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AltBaslik" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLEgitimlerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Baslik" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AltBaslik1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="AltBaslik2" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="GNO" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLHakkimda">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Soyad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Adres" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Resim" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLHobilerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Aciklama1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Aciklama2" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLiletisim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Konu" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Mesaj" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="TBLSertifikalarim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Aciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Tarih" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TBLYeteneklerim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Yetenek" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Oran" Type="Byte" />
+  </EntityType>
+  <EntityContainer Name="CVSitesiMVCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBLAdmin" EntityType="Self.TBLAdmin" />
+    <EntitySet Name="TBLDeneyimlerim" EntityType="Self.TBLDeneyimlerim" />
+    <EntitySet Name="TBLEgitimlerim" EntityType="Self.TBLEgitimlerim" />
+    <EntitySet Name="TBLHakkimda" EntityType="Self.TBLHakkimda" />
+    <EntitySet Name="TBLHobilerim" EntityType="Self.TBLHobilerim" />
+    <EntitySet Name="TBLiletisim" EntityType="Self.TBLiletisim" />
+    <EntitySet Name="TBLSertifikalarim" EntityType="Self.TBLSertifikalarim" />
+    <EntitySet Name="TBLYeteneklerim" EntityType="Self.TBLYeteneklerim" />
+    <EntitySet Name="TBLSosyalMedya" EntityType="CVSitesiMVCModel.TBLSosyalMedya" />
+  </EntityContainer>
+  <EntityType Name="TBLSosyalMedya">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Link" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="ikon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Durum" Type="Boolean" />
+  </EntityType>
+</Schema>

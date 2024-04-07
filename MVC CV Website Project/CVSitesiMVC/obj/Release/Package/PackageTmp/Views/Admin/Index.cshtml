@@ -1,0 +1,29 @@
+﻿@using CVSitesiMVC.Models.Entity
+@model List<TBLAdmin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Admin Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>KULLANICI ADI</th>
+        <th>DÜZENLE</th>
+        <th>SİL</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.KullaniciAdi</td>
+            <td><a href="/Admin/AdminDuzenle/@item.ID" class="btn btn-success">DÜZENLE</a></td>
+            <td><a href="/Admin/AdminSil/@item.ID" class="btn btn-danger">SİL</a></td>
+        </tr>
+    }
+</table>
+<a href="/Admin/AdminEkle/" class="btn btn-primary">Yeni Admin Ekle</a>
+

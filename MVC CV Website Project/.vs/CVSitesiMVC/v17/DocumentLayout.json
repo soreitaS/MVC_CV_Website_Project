@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1D9E565-037A-49BB-B684-5765DA02D51B}|CVSitesiMVC\\CVSitesiMVC.csproj|c:\\users\\\u0130brah\u0130m\\desktop\\github\\mvc cv website project\\cvsitesimvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1D9E565-037A-49BB-B684-5765DA02D51B}|CVSitesiMVC\\CVSitesiMVC.csproj|solutionrelative:cvsitesimvc\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1D9E565-037A-49BB-B684-5765DA02D51B}|CVSitesiMVC\\CVSitesiMVC.csproj|C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\cvsitesimvc\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1D9E565-037A-49BB-B684-5765DA02D51B}|CVSitesiMVC\\CVSitesiMVC.csproj|solutionrelative:cvsitesimvc\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\CVSitesiMVC\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "CVSitesiMVC\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\CVSitesiMVC\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "CVSitesiMVC\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-30T10:55:21.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\CVSitesiMVC\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "CVSitesiMVC\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0130BRAH\u0130M\\Desktop\\github\\MVC CV Website Project\\CVSitesiMVC\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "CVSitesiMVC\\Views\\Default\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-09T15:30:09.917Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
